@@ -41,9 +41,22 @@ public class Addressbook {
 	        contact.setPin(pin);
 	        contact.setMobileNumber(mobileNo);
 	        contact.setEmail(email);
+	    }
 	       
-	       
-	        System.out.print(contact);
+	        public void display() {
+	    		System.out.println(contact);
+	    	}
+
+	    	public void editContacts() {
+	    		System.out.println("Enter the First Name of a person to edit:");
+	    		String name = scanner.nextLine();
+
+	    		if (name.equalsIgnoreCase(contact.getFirstName())) {
+	    			addContact();
+	    		} else {
+	    			System.out.println("Invalid First Name \n Please enter Valid First name: ");
+	    		editContacts();}
+
 	       
 	    }
 	   
