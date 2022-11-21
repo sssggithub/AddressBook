@@ -6,9 +6,12 @@ import java.util.Scanner;
 public class Addressbook {
 
 	
-	   public static void main(String [] args) {
+	 Contacts contact;
+	   
 	    Scanner scanner =new Scanner(System.in);
-		   Contacts contact=new Contacts();
+	   
+	    public void addContact() {
+	    	contact=new Contacts();
 	        System.out.println("Enter the First name");
 	        String firstName=scanner.nextLine();
 	       
